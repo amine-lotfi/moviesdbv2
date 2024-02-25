@@ -109,7 +109,7 @@ async function fetchAndDisplayMovieDetails(movieID) {
 function displayMovieDetails(movieData) {
 
     const customModalBody = document.getElementById("customModalBody");
-    
+
     customModalBody.innerHTML = `
         <img src="${movieData.Poster}" class="img-fluid mb-3" alt="Movie Poster">
         <p>Plot: ${movieData.Plot}</p>
@@ -118,7 +118,8 @@ function displayMovieDetails(movieData) {
         <p>IMDB Rating: ${movieData.imdbRating}</p>
     `;
 
-    customModal.show(); // to show the custom modal
+    // to show the custom modal
+    customModal.show();
 
 }
 
